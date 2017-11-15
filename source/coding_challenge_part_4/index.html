@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<!---HEAD--->
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUL2M1YdLZR0kYhO6EVXDjmBzOm1fxaNQ" async defer></script>
+		
+		<script src="script.js"></script>
+		
+		<link type="text/css" rel="stylesheet" href="styles.css">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<title>Coding Challenge Part 4</title>
+	</head>
+
+<!---BODY--->
+	<body class="container">
+		<h1 class="text-center">- FIND A CITY - </h1>
+		<!--SEARCH BOX-->
+		<div class="form-group">
+			<input class="form-control form-control-lg" type="search" placeholder="Enter the name of a city here." id="searchbox">
+		</div>
+
+		<!--SUBSTRING MATCH CHECKBOX-->
+		<label for="substring_match_checkbox">
+			<input type="checkbox" checked data-toggle="toggle" id="substring_match_checkbox"> Search for cities with similar names.
+		</label>
+
+		<!--ROW CONTAINER FOR 2 COLUMNS: RESULTS AND MAPS-->
+		<div class="row">
+
+			<!--RESULTS COLUMN-->
+			<div class="col-sm-6">
+				<h3 class="text-center">RESULTS</h3>
+				<div id="results">
+				</div>
+			</div>
+			
+			<!--MAPS COLUMN-->
+			<div class="col-sm-6">
+				<h3 class="text-center">MAPS</h3>
+				<div id="map"></div>
+			</div>
+		</div>
+		<br>
+		<p style="font-size:14px;" class="text-center">Coded by Jonathan Velez</p>
+		<br>
+	</body>
+</html>
